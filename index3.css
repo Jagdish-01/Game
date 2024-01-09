@@ -5,6 +5,10 @@
   }
   
   h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  
     background-color: #081b31;
     color: #fff;
     height: 5rem;
@@ -12,6 +16,10 @@
   }
   
   .choice {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  
     height: 165px;
     width: 165px;
     border-radius: 50%;
@@ -22,11 +30,14 @@
   
   .choice:hover {
     cursor: pointer;
-    background-color: #081b31;
+    /* background-color: #081b31; */
   }
   
   img {
-    height: 150px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
@@ -41,6 +52,9 @@
   }
   
   .score-board {
+    margin: 0;
+    padding: 0;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +73,9 @@
   }
   
   #msg {
+    margin: 0;
+    padding: 0;
+    text-align: center;
     background-color: #081b31;
     color: #fff;
     font-size: 2rem;
