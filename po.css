@@ -1,0 +1,115 @@
+:root{
+    --yellow:#ffcc0d;
+    --bleck:#000;
+    --white:fff;
+    --light-bg:#eee;
+    --border-bold:5rem solid var(var(--bleck));
+    --border-light:2rem solid var(var(--bleck));
+
+}
+*{
+    font-family: sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--bleck);
+}
+*::selection{
+    background-color: var(--bleck);
+    color:var(--yellow);
+}
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+*::-webkit-scrollbar track{
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--yellow);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+    transition: .2s linear !important;
+}
+.header{
+    position: fixed;
+    top: 0;left: 0cm;
+    height: 100vh;
+    background-color: #eee;
+    border-right: 2px solid black;
+    width: 35rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    transform: .2s linear !important;
+    text-align: center ;
+}
+.header .logo{
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.header .navbar{
+ width: 100%;
+}
+.header .navbar a{
+    display: block;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: .5rem;
+}
+.header .navbar a.active,
+.header .navbar a:hover{
+background-color: var(--yellow);
+}
+.follow a{
+font-size: 3rem;
+margin: 0 1rem;
+cursor: pointer;
+transition: .6s linear !important;
+}
+.follow a:hover{
+    transform: rotate(360deg);
+}
+#menubtn{
+    position: absolute;
+    top: 0;right:-5.5rem;
+    height: 4.2rem;
+    line-height: 4.5rem;
+    width: 5rem;
+    font-size: 2.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+}
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.home .image img{
+    height: 65rem;
+    padding: 2rem;
+    border: 2px solid black;
+}
